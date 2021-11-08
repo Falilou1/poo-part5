@@ -1,0 +1,26 @@
+<?php
+
+require_once 'Vehicle.php';
+
+class Bike extends Vehicle implements LightableInterface
+{
+
+    public function switchOn(string $Bike) : bool  
+    {
+        while($this->currentSpeed > "10km/h"){
+            return $this->car = true;
+        }
+    }
+
+    public function switchOff(string $Bike) : bool  
+    {
+                return $this->car = false;
+    }
+}
+    
+
+
+
+
+
+
